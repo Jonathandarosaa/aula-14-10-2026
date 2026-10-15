@@ -1,0 +1,10 @@
+print("--- CALCULADORA DE MÉDIA (GRAVAÇÃO) ---")
+nome = input("Qual o nome do aluno: ")
+n1 = float(input("primeira nota: "))
+n2 = float(input("segunda nota: "))
+n3 = float(input("terceira nota: "))
+with open("notas.txt", "w") as arquivo:
+    arquivo.write(f"{nome}\n")
+    arquivo.write(f"{n1}\n")
+    arquivo.write(f"{n2}\n")
+    arquivo.write(f"{n3}\n")
